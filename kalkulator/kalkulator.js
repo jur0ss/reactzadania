@@ -1,5 +1,8 @@
 class Calculator
 {
+    policz(p){
+        
+    }
     result = 0
     add(a,b)
     {
@@ -20,4 +23,4 @@ class Calculator
 }
 
 const dzialania = new Calculator()
-console.log(dzialania.add(10,15))
+console.log(dzialania.add({a:10,b:15, dzialnie:"add"))
