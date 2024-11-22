@@ -1,23 +1,23 @@
 class Calculator
 {
     result = 0
-    dodaj(a,b)
+    add(a,b)
     {
         return a+b
     }
-    odejmij(a,b)
+    subtract(a,b)
     {
         return a-b
     }
-    pomnoz(a,b)
+    multiply(a,b)
     {
         return a*b
     }
-    podziel(a,b)
+    divide(a,b)
     {
         return a/b
     }
 }
 
 const dzialania = new Calculator()
-console.log(dzialania.odejmij(10,15))
+console.log(dzialania.add(10,15))
