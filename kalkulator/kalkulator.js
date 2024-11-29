@@ -3,21 +3,21 @@ class Calculator
     result = 0
     add(a,b)
     {
-        return a+b
+        console.log(`Wynik to ${a+b}`)
     }
     subtract(a,b)
     {
-        return a-b
+        console.log(`Wynik to ${a-b}`)
     }
     multiply(a,b)
     {
-        return a*b
+        console.log(`Wynik to ${a*b}`)
     }
     divide(a,b)
     {
-        return a/b
+        console.log(`Wynik to ${a/b}`)
     }
 }
 
 const dzialania = new Calculator()
-console.log (dzialania.add(10,15))
+dzialania.add(10,15)
