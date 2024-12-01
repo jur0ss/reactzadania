@@ -17,5 +17,13 @@ const products = [p1,p2,p3,p4]
 const fruits = products.filter(product => product.category === "fruit")
 const vegetables = products.filter(product => product.category === "vegetable")
 
-console.log(`Fruits: ${fruits.map(fruit => fruit.name).join(", ")}`);
-console.log(`Vegetables: ${vegetables.map(vegetable => vegetable.name).join(", ")}`);
+console.log(`Owoce: ${fruits.map(fruit => fruit.name).join(", ")}`);
+console.log(`Warzywa: ${vegetables.map(vegetable => vegetable.name).join(", ")}`);
+
+
+const min = 5
+const max = 10
+const priceRange = products.filter(product => {return product.price >= min && product.price <= max;});
+
+console.log(`Produkty w tym zakresie cenowym: ${priceRange.map(product => product.name).join(", ")} `)
+
