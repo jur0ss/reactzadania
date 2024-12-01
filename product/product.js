@@ -13,6 +13,6 @@ const p3 = new Product("carrot", 4, "vegetable")
 
 const products = [p1,p2,p3]
 
-const fruit = products.filter(category => category === "fruit")
+const fruits = products.filter(product => product.category === "fruit")
 
-console.log(fruit)
+console.log(fruits)
