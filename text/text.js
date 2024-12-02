@@ -5,6 +5,19 @@ const processText = (
     {
         if (removeSpecialChars==true) 
         {
-            text = text.replace(/[^a-zA-Z0-9\s]/g, '')
+            text = text.replace(/[^a-zA-Z0-9\s]/g, '') //zamiana wszystkich znaków specjalnych
         }
+
+        if (uppercase==true) 
+        {
+            text = text.toUpperCase()
+        }
+
+        if (reverse) 
+        {
+            text = [...text].reverse().join('') //reverse() działa tylko na tablicach dlatego używamy spreada
+        }
+
+        return text
+        
     }
