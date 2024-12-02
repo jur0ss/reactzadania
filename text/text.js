@@ -21,3 +21,5 @@ const processText = (
         return text
         
     }
+const test = processText("woda po parówkach", {uppercase:true, reverse:true, removeSpecialChars:false})
+console.log(test)
