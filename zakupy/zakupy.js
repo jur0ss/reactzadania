@@ -14,7 +14,9 @@ class Cart
     removeProduct(name)
     {
         const index = this.products.indexOf(name)
-        this.products = this.products.splice(index, 1)
+        if (index !== -1) { // Check if the product exists
+            this.products.splice(index, 1); // Remove the product
+        }
     }
 
 }
